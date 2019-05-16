@@ -1,7 +1,7 @@
 # Escriba su código aquí
 file=data.csv
 
-# Changes '\' to '-'
+# Changes '/' to '-'
 sed 's/\([0-9]*\)\/\([0-9]*\)\/\([0-9]*\);/20\3-\2-\1;/' $file | \
 
 # Fills with null any value in the first row that is not in {A,B,C,a,b,c}
