@@ -7,7 +7,7 @@ sed 's/\([0-9]*\)\/\([0-9]*\)\/\([0-9]*\);/20\3-\2-\1;/' $file | \
 # Fills with null any value in the first row that is not in {A,B,C,a,b,c}
 sed 's/;[^A,B,C,a,b,c]{1};/;\\N;/'| \
 
-# Fills wiht null empty fields
+# Fills with null empty fields
 sed 's/;;/;\\N;/' | \
 
 # Cast from lower to upper case
